@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/prop_imageview"
+        android:layout_width="@dimen/edit_image_button_size"
+        android:layout_height="@dimen/edit_image_button_size"
+        android:padding="@dimen/edit_image_button_padding"
+        android:src="@drawable/ic_brightness_low_grey_600_24dp"/>
+
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/edit_image_seekbar_margin"
+        android:layout_marginRight="@dimen/edit_image_seekbar_margin" />
+
+    <ImageView
+        android:id="@+id/reset_button"
+        android:layout_width="@dimen/edit_image_button_size"
+        android:layout_height="@dimen/edit_image_button_size"
+        android:padding="@dimen/edit_image_button_padding"
+        android:layout_gravity="right"
+        android:src="@drawable/ic_undo_grey_600_24dp"/>
+
+</merge>

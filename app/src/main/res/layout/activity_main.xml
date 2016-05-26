@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="elanic.in.rsenhancer.MainActivity">
+
+    <elanic.in.rsenhancer.SquareWidthImageView
+        android:id="@+id/imageview"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <elanic.in.rsenhancer.ImageSeekbar
+        android:id="@+id/seekbar_seeker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="84dp"
+        app:seek_start="0"
+        app:seek_end="40"
+        app:seek_default="20"
+        app:seek_prop_drawable="@drawable/ic_brightness_low_grey_600_24dp"/>
+
+    <Button
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/image_button"
+        android:text="Select Image"/>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:id="@+id/control_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <elanic.in.rsenhancer.TouchRevealImageView
+            android:id="@+id/brightness_button"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:reveal_color="@color/colorPrimaryDark"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            app:image_size="42dp"
+            android:src="@drawable/ic_brightness_low_white_24dp"
+            android:text="Brightness"
+            android:textSize="12sp"
+            android:textColor="@color/colorAccent" />
+
+        <elanic.in.rsenhancer.TouchRevealImageView
+            android:id="@+id/contrast_button"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:reveal_color="@color/colorPrimaryDark"
+            app:image_size="42dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:src="@drawable/ic_tonality_white_24dp"
+            android:text="Contrast"
+            android:textSize="12sp"
+            android:textColor="@color/colorAccent" />
+
+        <elanic.in.rsenhancer.ToggleRotateImageView
+            android:id="@+id/auto_en_button"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:image_size="42dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            app:src_active="@drawable/ic_auto_fix_white_24dp"
+            app:src_inactive="@drawable/ic_replay_white_24dp"
+            app:title_active="@string/auto_enhance_active"
+            app:title_inactive="@string/auto_enhance_inactive"
+            android:text="Contrast"
+            android:textSize="12sp"
+            android:textColor="@color/colorAccent" />
+
+        <!--<ImageView
+            android:id="@+id/auto_en_button"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_brush_grey_600_18dp" />-->
+
+        <elanic.in.rsenhancer.TouchRevealImageView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:reveal_color="@color/colorPrimaryDark"
+            android:src="@drawable/ic_brush_grey_600_18dp"
+            android:text="Paint"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent" />
+
+    </LinearLayout>
+
+</RelativeLayout>

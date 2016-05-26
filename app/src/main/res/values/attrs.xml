@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ImageSeekbar">
+        <attr name="seek_prop_drawable" format="reference"/>
+        <attr name="seek_start" format="integer"/>
+        <attr name="seek_end" format="integer"/>
+        <attr name="seek_default" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="BottomTextImageView">
+        <attr name="image_size" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="TouchRevealImageView">
+        <attr name="reveal_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="ToggleRotateImageView">
+        <attr name="src_active" format="reference"/>
+        <attr name="src_inactive" format="reference"/>
+        <attr name="title_active" format="string"/>
+        <attr name="title_inactive" format="string"/>
+    </declare-styleable>
+
+</resources>
